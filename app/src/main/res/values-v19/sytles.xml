@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="CartoonAppTheme" parent="AppTheme">
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+
+    <item name="android:textColorPrimary">@color/textColor</item>
+    <item name="android:fitsSystemWindows">true</item>
+
+    <item name="android:windowBackground">@color/white</item>
+  </style>
+
+</resources>
