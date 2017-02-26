@@ -23,16 +23,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
-        android:onClick="whiteImageClick"
-        android:text="White Image Toolbar"
+        android:onClick="whiteMiClick"
+        android:text="White Mi Toolbar"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
-        android:onClick="whiteMiClick"
-        android:text="White Mi Toolbar"
+        android:onClick="whiteImageClick"
+        android:text="White Image Toolbar"
         />
   </LinearLayout>
 </FrameLayout>
