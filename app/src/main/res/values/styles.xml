@@ -8,12 +8,11 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
-  <style name="CartoonAppTheme" parent="AppTheme">
+  <style name="WhiteToolbarAppTheme" parent="AppTheme">
 
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
 
-    <item name="android:textColorPrimary">@color/textColor</item>
     <item name="android:fitsSystemWindows">true</item>
 
     <item name="android:windowBackground">@color/white</item>
@@ -23,8 +22,8 @@
     <item name="android:textSize">16sp</item>
   </style>
 
-  <style name="toolbarTitleTheme" parent="@style/ThemeOverlay.AppCompat.Light">
-    <item name="colorControlNormal">@color/titleColor</item>
+  <style name="WhiteToolbarAppThemeFull" parent="AppTheme">
+
   </style>
 
 </resources>

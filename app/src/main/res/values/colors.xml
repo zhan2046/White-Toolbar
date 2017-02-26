@@ -2,6 +2,7 @@
 <resources>
   <color name="mainColor">#FF6F98D5</color>
   <color name="white">#FFFFFFFF</color>
+  <color name="transparent">#00000000</color>
 
   <color name="startColor">@color/white</color>
   <color name="centerColor">#FFF5F5F5</color>
@@ -10,7 +11,4 @@
   <color name="colorPrimary">@color/white</color>
   <color name="colorPrimaryDark">@color/endColor</color>
   <color name="colorAccent">@color/mainColor</color>
-
-  <color name="titleColor">#FF999999</color>
-  <color name="textColor">#FF525252</color>
 </resources>

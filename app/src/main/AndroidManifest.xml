@@ -8,13 +8,25 @@
       android:label="@string/app_name"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-    <activity android:name=".MainActivity">
+    <activity android:name=".MainActivity"
+        android:theme="@style/WhiteToolbarAppTheme"
+        android:screenOrientation="portrait">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+
+    <activity android:name=".WhiteToolbarActivity" android:theme="@style/WhiteToolbarAppTheme"
+        android:screenOrientation="portrait"/>
+
+    <activity android:name=".WhiteToolbarToImageActivity" android:theme="@style/WhiteToolbarAppThemeFull"
+        android:screenOrientation="portrait"/>
+
+    <activity android:name=".WhiteMiToolbarActivity" android:theme="@style/WhiteToolbarAppTheme"
+        android:screenOrientation="portrait"/>
+
   </application>
 
 </manifest>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/app_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fitsSystemWindows="false"
+      app:elevation="0dp"
+      >
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentScrim="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        app:statusBarScrim="@android:color/transparent"
+        >
+
+      <ImageView
+          android:id="@+id/top_image_iv"
+          android:layout_width="match_parent"
+          android:layout_height="233dp"
+          android:scaleType="centerCrop"
+          android:src="@mipmap/avatar"
+          app:layout_collapseParallaxMultiplier="0.7"
+          />
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          app:layout_collapseMode="pin"
+          android:background="@android:color/transparent"
+          />
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"
+        />
+  </android.support.design.widget.AppBarLayout>
+
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+      <FrameLayout
+          android:padding="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="233dp"
+          >
+
+        <TextView
+            android:background="@color/mainColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="smile"
+            android:textColor="@android:color/white"
+            android:textSize="33sp"/>
+      </FrameLayout>
+
+      <FrameLayout
+          android:padding="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="233dp"
+          >
+
+        <TextView
+            android:background="@color/mainColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="smile"
+            android:textColor="@android:color/white"
+            android:textSize="33sp"/>
+      </FrameLayout>
+
+      <FrameLayout
+          android:padding="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="233dp"
+          >
+
+        <TextView
+            android:background="@color/mainColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="smile"
+            android:textColor="@android:color/white"
+            android:textSize="33sp"/>
+      </FrameLayout>
+    </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
