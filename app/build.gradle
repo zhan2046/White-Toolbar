@@ -32,4 +32,5 @@ dependencies {
   implementation "com.google.android.material:material:${versions.supportLibrary}"
   implementation "androidx.recyclerview:recyclerview:${versions.supportLibrary}"
   implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
 }
