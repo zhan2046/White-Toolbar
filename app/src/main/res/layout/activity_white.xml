@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-  <android.support.v7.widget.Toolbar
-      android:id="@+id/toolbar"
-      android:layout_width="match_parent"
-      android:layout_height="48dp"
-      app:titleTextAppearance="@style/ToolbarTitle"
-      android:background="@drawable/shape_toolbar_mark"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_toolbar_mark"
+        app:titleTextAppearance="@style/ToolbarTitle" />
 
-  <View
-      android:background="#999999"
-      android:layout_width="match_parent"
-      android:layout_height="0.5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999" />
 
-  <FrameLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:drawableTop="@mipmap/avatar"
-        android:drawablePadding="10dp"
-        android:text="smile"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="@color/mainColor"
-        android:textSize="22sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-  </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/avatar"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="smile"
+            android:textColor="@color/mainColor"
+            android:textSize="22sp" />
+    </FrameLayout>
 </LinearLayout>

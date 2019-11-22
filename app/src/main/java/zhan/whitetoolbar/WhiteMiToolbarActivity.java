@@ -1,9 +1,11 @@
 package zhan.whitetoolbar;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import zhan.whitetoolbar.utils.StatusBarUtil;
 
 public class WhiteMiToolbarActivity extends AppCompatActivity {
@@ -13,13 +15,9 @@ public class WhiteMiToolbarActivity extends AppCompatActivity {
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-
-    //设置状态栏黑色字体图标
     mPhoneType = StatusBarUtil.StatusBarLightMode(this);
-
     setContentView(R.layout.activity_white_mi);
-
-    toolbar = (Toolbar) findViewById(R.id.toolbar);
+    toolbar = findViewById(R.id.toolbar);
     initToolbar("White Toolbar");
   }
 
@@ -28,10 +26,6 @@ public class WhiteMiToolbarActivity extends AppCompatActivity {
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     getSupportActionBar().setDisplayShowTitleEnabled(true);
-    toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        finish();
-      }
-    });
+    toolbar.setNavigationOnClickListener(v -> finish());
   }
 }

@@ -1,9 +1,10 @@
 package zhan.whitetoolbar;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class WhiteToolbarActivity extends AppCompatActivity {
 
@@ -13,7 +14,7 @@ public class WhiteToolbarActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_white);
 
-    toolbar = (Toolbar) findViewById(R.id.toolbar);
+    toolbar = findViewById(R.id.toolbar);
     initToolbar("White Toolbar");
   }
 
@@ -22,10 +23,6 @@ public class WhiteToolbarActivity extends AppCompatActivity {
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     getSupportActionBar().setDisplayShowTitleEnabled(true);
-    toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        finish();
-      }
-    });
+    toolbar.setNavigationOnClickListener(v -> finish());
   }
 }

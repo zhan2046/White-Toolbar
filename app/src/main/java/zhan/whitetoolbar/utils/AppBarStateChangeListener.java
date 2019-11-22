@@ -1,10 +1,8 @@
 package zhan.whitetoolbar.utils;
 
-import android.support.design.widget.AppBarLayout;
 
-/**
- * Created by zhan on 2016/12/26.
- */
+import com.google.android.material.appbar.AppBarLayout;
+
 public abstract class AppBarStateChangeListener implements AppBarLayout.OnOffsetChangedListener {
 
   public enum State {
